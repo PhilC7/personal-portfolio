@@ -1,22 +1,28 @@
 :root {
   --primary-color: #141850;
   --secondary-color: #ed7966;
-  --accent-color: #f5cac2;
+  --accent-color: #cfe6f1;
   --heading-font: font-family: 'Bitter', serif;
 }
 
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  /* add scroll padding to stop section heading sitting behind the navbar */
+  scroll-padding-top: 75px;
+
 }
 
 body {
   /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
+  background-color: var(--accent-color);
 }
 
 h1 {
@@ -44,13 +50,19 @@ h6 {
   font-size: 1.5rem;
 }
 
+/* Set all H tags to Bitter font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+color: var(--primary-color);
+}
+
 p {
   margin-bottom: 1rem;
 }
 
 header {
   background-color: white;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   box-shadow: 0px -5px 20px 3px rgba(0, 0, 0, 0.2);
@@ -62,8 +74,10 @@ header {
   font-size: 4rem;
   font-weight: 700;
   font-family: 'Bitter', serif;
+}
 
-
+.logo:hover {
+  color: var(--secondary-color);
 }
 
 .container {
@@ -101,14 +115,16 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--secondary-color);
 }
+section {
+  padding: 25px 0;
+}
 
 .hero {
-  margin: 75px auto 0;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 25px 0;
 }
 
 .top-content img {
@@ -132,9 +148,31 @@ nav ul li a:hover {
 
 .bottom-content h1 {
   font-size: 8rem;
-  font-family: 'Bitter', serif;
 }
 
 .bottom-content p {
   font-size: 2rem;
+}
+
+#about {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+#about p {
+  max-width: 59%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+#work {
+  height: 600px;
+}
+#contact {
+  height: 600px;
 }
