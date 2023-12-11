@@ -92,7 +92,7 @@ header {
   width: 100%;
 
   /* condensed all padding values into one property */
-  padding: 0 1rem;
+  padding: 2.5rem 1rem;
 
   /* condensed all margin values into one property */
   margin: 0 auto;
@@ -103,7 +103,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 75px;
+  height: 75px;
 }
 
 nav ul {
@@ -244,10 +244,6 @@ figure h3 {
   object-fit: cover;
 }
 
-.tbc {
-  background-color: #c2c2c2;
-}
-
 #contact {
   margin: 3rem auto;
   text-align: center;
@@ -316,7 +312,7 @@ footer i .fa-brands .fa-square-github {
     width: 100%;
 
     /* condensed all padding values into one property */
-    padding: 0 3rem;
+    padding: 2.5rem 3rem;
   }
 
   figure h3 {
@@ -326,9 +322,14 @@ footer i .fa-brands .fa-square-github {
 }
 
 @media only screen and (max-width: 762px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
   .top-bar {
     flex-direction: column;
     padding: 1rem 0;
+    height: auto;
   }
 
   nav {
