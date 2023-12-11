@@ -64,6 +64,8 @@ p {
   color: var(--secondary-color);
 }
 
+/* Most of the above code was taken from UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/03-wireframing-selectors-variables-lesson/ activities/07-Stu-Mini-Project/solved/assets where I adated certain elements to suit my project.*/
+
 header {
   background-color: white;
   position: sticky;
@@ -88,10 +90,12 @@ header {
 .container {
   max-width: 992px;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+
+  /* condensed all padding values into one property */
+  padding: 0 1rem;
+
+  /* condensed all margin values into one property */
+  margin: 0 auto;
 }
 
 .top-bar {
@@ -136,13 +140,8 @@ section {
   margin: 2rem 0;
 }
 
-.top-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/* condensed both class tags into one declaration block*/
+.top-content,
 .bottom-content {
   display: flex;
   flex-direction: column;
@@ -315,8 +314,9 @@ footer i .fa-brands .fa-square-github {
 @media only screen and (max-width: 992px) {
   .container {
     width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+
+    /* condensed all padding values into one property */
+    padding: 0 3rem;
   }
 
   figure h3 {
