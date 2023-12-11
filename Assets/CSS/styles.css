@@ -1,8 +1,7 @@
 :root {
-  --primary-color: #141C34;
+  --primary-color: #141c34;
   --secondary-color: #007991;
-  --accent-color: #E1E1E1;
-  --heading-font: font-family: 'Bitter', serif;
+  --accent-color: #e1e1e1;
 }
 
 html {
@@ -12,12 +11,11 @@ html {
 
   /* add scroll padding to stop section heading sitting behind the navbar */
   scroll-padding-top: 75px;
-
 }
 
 body {
   /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
@@ -51,9 +49,14 @@ h6 {
 }
 
 /* Set all H tags to Bitter font */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bitter', serif;
-color: var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+  color: var(--primary-color);
 }
 
 p {
@@ -75,7 +78,7 @@ header {
   color: var(--primary-color);
   font-size: 4rem;
   font-weight: 700;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
 
 .logo:hover {
@@ -97,7 +100,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  
 }
 
 nav ul {
@@ -120,7 +122,6 @@ nav ul li a:hover {
 section {
   padding: 25px 0;
 }
-
 
 .hero {
   margin: 0 auto;
@@ -157,8 +158,7 @@ section {
 .bottom-content p {
   font-size: 3rem;
   color: var(--secondary-color);
-  font-weight: 700
-  ;
+  font-weight: 700;
 }
 
 #about {
@@ -177,7 +177,6 @@ section {
   margin-top: 2rem;
   text-align: justify;
   text-align-last: center;
-
 }
 
 #work {
@@ -208,8 +207,7 @@ figure {
 }
 
 figure:hover {
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
-
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 figure:hover h3 {
@@ -222,40 +220,59 @@ figure h3 {
   font-size: 2.5rem;
   left: 0;
   bottom: 3rem;
-  padding:  10px 30px;
+  padding: 10px 30px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-.work  {
+.work {
   /* set scale to 48% to cater for the flex gap */
   flex: 1 0 48%;
   height: 200px;
   overflow: hidden;
 }
 
-
-.main-work{ 
+.main-work {
   height: 400px;
   overflow: hidden;
   margin-top: 1rem;
 }
 
-.main-work img, .work img {
-height: auto;
-width: 100%;
-object-fit: cover;
+.main-work img,
+.work img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
 .tbc {
   background-color: #c2c2c2;
 }
 
-
-
-
 #contact {
-  margin: 0 auto;
+  margin: 3rem auto;
   text-align: center;
   width: 100%;
+}
+
+#contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact h5 {
+  margin-top: 2rem;
+}
+
+.contact h5 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contact h5 a:hover {
+  color: var(--secondary-color);
+}
+
+.contact h5 span {
+  margin-right: 3rem;
+  color: var(--secondary-color);
 }
