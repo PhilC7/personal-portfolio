@@ -276,3 +276,38 @@ figure h3 {
   margin-right: 3rem;
   color: var(--secondary-color);
 }
+
+footer {
+  background-color: var(--secondary-color);
+}
+
+footer h6 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+footer h6 span {
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 2rem;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+footer i .fa-brands .fa-square-github {
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
